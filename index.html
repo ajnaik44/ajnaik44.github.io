@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajay Naik - Resume</title>
     <style>
-        /* Add your CSS styles here */
-        /* This is just a basic example, you can add more styles to make it visually appealing */
-        body {
+       body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
 
         .container {
@@ -23,24 +22,74 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h1, h2, h3 {
-            color: #333;
+        header {
+            text-align: center;
+            margin-bottom: 20px;
         }
 
-        p {
-            margin: 10px 0;
+        header h1 {
+            margin: 5px 0;
+        }
+
+        header p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+            color: #666;
         }
 
         .section {
             margin-bottom: 20px;
         }
 
+        .section h2 {
+            margin-bottom: 10px;
+            color: #333;
+            font-size: 1.2rem;
+        }
+
         .section h3 {
             margin-bottom: 5px;
+            color: #444;
+            font-size: 1rem;
+        }
+
+        .section p {
+            margin: 5px 0;
+            font-size: 0.9rem;
         }
 
         .section ul {
             padding-left: 20px;
+        }
+
+        .section li {
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .skills {
+            font-weight: bold;
+        }
+
+        .education {
+            margin-bottom: 20px;
+        }
+
+        .education h3 {
+            margin-bottom: 5px;
+            color: #444;
+            font-size: 1rem;
+        }
+
+        .certifications ul {
+            padding-left: 20px;
+        }
+
+        .certifications li {
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+            color: #666;
         }
     </style>
 </head>
@@ -119,7 +168,7 @@
             <!-- Add more work experiences here -->
         </section>
 
-        <section class="section">
+         <section class="section skills">
             <h2>SKILLS</h2>
             <p>Java: Java, Spring, Spring Boot, Hibernate, Git, Microservices, Kubernetes, JUnit, Apache Maven, Scala, SOAP, PL/SQL, SQL, NoSQL, JIRA, MySQL, PostgreSQL, Jenkins, MongoDB, Hazelcast, Amazon Web Services, Unix, Splunk, MongoDB, Redis, JSON, XML, Tomcat, Struts, JavaScript, TypeScript, CSS</p>
             <p>Big Data: Apache Kafka, Apache Hadoop, Apache HBase, Apache Spark, Apache Hive, Python, Pyspark, MapReduce, Apache Sqoop, Hadoop Distributed File System, Data Mining, Cassandra</p>
@@ -127,14 +176,14 @@
             <!-- Add more skills here -->
         </section>
 
-        <section class="section">
+       <section class="section education">
             <h2>EDUCATION</h2>
             <h3>Ms in Computer Science City University Of Seattle • Seattle, Washington, USA • GPA: 4 • 09/2022 - 03/2024</h3>
             <h3>Diploma In Advance Computing in Computer Science CDAC • Pune, Maharashtra, India • 02/2010</h3>
             <h3>B.E in Computer Science & Engineering Amravati University • Amravati, Maharashtra, India • 05/2009</h3>
         </section>
 
-        <section class="section">
+        <section class="section certifications">
             <h2>CERTIFICATIONS</h2>
             <ul>
                 <li>AWS Certified Solutions Architect – Associate</li>
