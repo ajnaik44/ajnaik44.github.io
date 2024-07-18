@@ -5,199 +5,260 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajay Naik - Resume</title>
     <style>
-         body {
+        body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            font-size: 16px;
-            line-height: 1.6;
         }
-
         .container {
-            max-width: 800px;
-            margin: 20px auto;
+            width: 80%;
+            margin: auto;
+            background: white;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-left: 10px solid #4CAF50;
         }
-
-        header {
+        .header {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 36px;
+        }
+        .header p {
+            font-size: 18px;
+            color: #777;
+            margin: 5px 0;
+        }
+        .contact-info {
             text-align: center;
             margin-bottom: 20px;
         }
-
-        header h1 {
-            margin: 5px 0;
+        .contact-info a {
+            color: #4CAF50;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .section-title h2 {
+            margin: 0;
             font-size: 24px;
         }
-
-        header p {
-            margin: 5px 0;
-            font-size: 14px;
-            color: #666;
+        .skills-list {
+            margin-left: 20px;
+            color: #555;
         }
-
-        .section {
+        .experience-list {
+            margin-left: 20px;
+            color: #555;
+        }
+        .education-list {
+            margin-left: 20px;
+            color: #555;
+        }
+        .certifications-list {
+            margin-left: 20px;
+            color: #555;
+        }
+        .timeline {
+            list-style-type: none;
+            padding: 0;
+            position: relative;
+            margin: 20px 0 10px;
+            padding-left: 1.5em;
+        }
+        .timeline li {
+            position: relative;
             margin-bottom: 20px;
         }
-
-        .section h2 {
-            margin-bottom: 10px;
-            color: #333;
+        .timeline li::before {
+            content: '';
+            background-color: #4CAF50;
+            position: absolute;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .timeline-content {
+            margin-left: 20px;
+            padding: 10px;
+            background: #f0f0f0;
+            border-left: 2px solid #4CAF50;
+            position: relative;
+        }
+        .timeline-content h3 {
+            margin-top: 0;
             font-size: 20px;
+            color: #333;
         }
-
-        .section h3 {
-            margin-bottom: 5px;
-            color: #444;
-            font-size: 18px;
-        }
-
-        .section p {
+        .timeline-content p {
             margin: 5px 0;
-            font-size: 16px;
-        }
-
-        .section ul {
-            padding-left: 20px;
-        }
-
-        .section li {
-            margin-bottom: 5px;
-            font-size: 16px;
-            color: #666;
-        }
-
-        .skills {
-            font-weight: bold;
-        }
-
-        .education {
-            margin-bottom: 20px;
-        }
-
-        .education h3 {
-            margin-bottom: 5px;
-            color: #444;
-            font-size: 18px;
-        }
-
-        .certifications ul {
-            padding-left: 20px;
-        }
-
-        .certifications li {
-            margin-bottom: 5px;
-            font-size: 16px;
-            color: #666;
+            color: #555;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
+        <div class="header">
             <h1>Ajay Naik</h1>
-            <p> • +1 425-864-2035 • ajay.naik44@gmail.com • <a href="https://linkedin.com/in/ajaynaik44">linkedin.com/in/ajaysnaik</a></p>
-            <p><b></b>Java Developer | Data Engineer | Backend Developer | Software Engineer | Full Stack Developer</b></p>
-        </header>
+            <p>+1 (425) 864-2035 | <a href="mailto:ajay.naik44@gmail.com">ajay.naik44@gmail.com</a> | <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+            <p>Java Developer | Backend Developer | Software Engineer | Full Stack Developer</p>
+            <p>11+ years as a J2EE & Big Data architect delivering scalable solutions, from design to deployment.</p>
+        </div>
 
-        <section class="section">
-            <h2>WORK EXPERIENCE</h2>
-            
-            <h3>City University of Seattle • Seattle, US, USA • 01/2023 - current</h3>
-            <p>Teacher Assistant</p>
-            <ul>
-                <li>Developed & implemented a Java-based end-to-end test automation framework for student submission reports, streamlining grading processes and boosting efficiency in frontend development using JavaScript, with comprehensive logging functionalities.</li>
-            </ul>
-            
-            <h3>Visma Consulting • Helsinki, Uusimaa, Finland • 08/2021 - 09/2022</h3>
-            <p>Senior Software Engineer</p>
-            <ul>
-                <li>Enhanced efficiency by 20% and reduced costs through the modernization of legacy apps to microservices with Docker and Kubernetes, leveraging a robust technical architecture with containerization.</li>
-                <li>Cut build/deployment time by 87.5%, from 8 hours to 1, with Jenkins CI/CD via Git/SVN integration, boosting dev speed.</li>
-                <li>Designed and implemented a new Single Sign-On (SSO) system within an existing digital signature MVC product, incorporating OAuth2. This system enables seamless SSO across multiple platforms, configured through cross-functional collaboration and established design patterns.</li>
-            </ul>
-            
-            <h3>Clairvoyant • Pune, India • Full-time • 04/2020 - 04/2021</h3>
-            <p>LEAD SOFTWARE ENGINEER</p>
-            <ul>
-                <li>Contributed as Tech Lead in the utilization of Kafka and Java to create a streamlined process for fetching and storing data from XML files, resulting in a productivity improvement of 50k records per batch. This initiative encompassed scaling the system effectively, incorporating design patterns, and executing ETL (Extract, Transform, Load) methodologies.</li>
-                <li>Improved data ingestion efficiency by 50%: Enhanced Spark, Hive, and Kafka integration to accelerate processing and enable real-time data ingestion, configurable for storage on AWS and GCP Cloud platforms.</li>
-                <li>Increased PayPal Honey Entity data access speed by 30% through development of a reliable REST API using Spring MVC and Java.</li>
-            </ul>
-            
-            <h3>SABA • Pune, India • Full-time • 12/2017 - 04/2020</h3>
-            <p>SENIOR MODULE LEAD</p>
-            <ul>
-                <li>Boosted throughput by 10x, processing 1M records in 1 hour vs. 1 hour per job: Increased efficiency and speed of learning module processing.</li>
-                <li>Improved report generation time by 95%: Designed data pipeline to integrate archived & current data, reducing time to generate 5M records from 24 hours to 30 minutes.</li>
-            </ul>
-            
-            <h3>Deutsche Bank Group Market Risk It • Pune, Maharashtra, India • 05/2016 - 12/2017</h3>
-            <p>Associate Software Developer</p>
-            <ul>
-                <li>Revamped Deutsche Bank's exposure assessment for listed trades: Implemented advanced back-testing methods resulting in 30% more accurate risk analysis.</li>
-                <li>Improved back-testing process by 50%: Utilized agile methodology to optimize back-testing runs, resulting in faster and more accurate results.</li>
-                <li>Streamlined trade valuation process by 50%: Designed and implemented high-performance Matrix system for 90,000+ trades.</li>
-                <li>Implemented optimizations using Java, Hazelcast, and multi-threading within a distributed system, resulting in a remarkable increase in trade data processing speed by 48x. This reduction in processing time from 48 hours to 4 not only saved time but also significantly reduced costs, highlighting the effectiveness of advanced data structures and algorithms.</li>
-                <li>Increased team productivity by 25% and received Recognition and Spot Excellence awards for efficient coding.</li>
-            </ul>
-            
-            <h3>Zensar • Pune, Maharashtra, India • 02/2015 - 05/2016</h3>
-            <p>Senior Software Engineer</p>
-            <ul>
-                <li>Implemented microservices for core functions: Created REST APIs for Breeds, Judges, and Events, streamlining data access by 50%.</li>
-                <li>Developed secure login services for LDAP, GIGYA, and database using Spring Security, ensuring user confidentiality and data integrity.</li>
-                <li>Automated data synchronization: Reduced manual effort by 80% and improved data consistency for Oracle and MySQL databases.</li>
-            </ul>
-            
-            <h3>HSBC • Pune, Maharashtra, India • 05/2011 - 02/2015</h3>
-            <p>Senior Software Engineer</p>
-            <ul>
-                <li>Enhanced campaign targeting for us.hsbc.com customers: Designed and implemented automated data upload system, resulting in daily updates and improved customer engagement.</li>
-                <li>Streamlined campaign data retrieval, saving Content Management team 1 hour per day</li>
-            </ul>
-            
-            <h3>CDAC R&D • Pune, Maharashtra, India • 03/2010 - 04/2011</h3>
-            <p>Project Engineer</p>
-            <ul>
-                <li>Successfully led implementation of customized Account, Budget, Works, and Billing Monitoring System, resulting in 20% increase in client satisfaction.</li>
-                <li>Custom Billing Module reduced billing errors by 30% and received positive feedback from the client for exceeding their expectations.</li>
-            </ul>
-            
-            <!-- Add more work experiences here -->
-        </section>
+       <div class="section">
+    <div class="section-title">
+        <h2>Technical Skills</h2>
+    </div>
+    <div class="skills-list">
+        <ul>
+            <li><strong>Languages:</strong> Java, Python, Scala, JavaScript, TypeScript, CSS, React, HTML, Groovy, Ruby</li><br>
+            <li><strong>Frameworks:</strong> Spring, SpringBoot, Hibernate, Git, SVN, Hazelcast, Unix, Microservices, Kubernetes, JUnit, Apache Maven, Jenkins, SOAP, PL/SQL, JIRA, Splunk, Redis, JSON, XML, Tomcat, Struts, MVC, Apache CFX, Docker, Ruby on Rails</li><br>
+            <li><strong>Database:</strong> PostgreSQL, MongoDB, MySQL, Oracle, Apache HBase, Apache Hive, Cassandra, DynamoDB, Azure Storage</li><br>
+            <li><strong>Big Data:</strong> Apache Kafka, Apache Hadoop, Apache Spark, Pyspark, MapReduce, Apache Sqoop, HDFS, Data Mining</li><br>
+            <li><strong>Cloud:</strong> AWS S3, EC2, ECS, Lambda, Cognito, Aurora, GCP</li><br>
+            <li><strong>Server:</strong> Tomcat, JBoss, Web Server, IBM WebSphere Server</li>
+        </ul>
+    </div>
+</div>
 
-         <section class="section skills">
-            <h2>SKILLS</h2>
-            <p>Java: Java, Spring, Spring Boot, Hibernate, Git, Microservices, Kubernetes, JUnit, Apache Maven, Scala, SOAP, PL/SQL, SQL, NoSQL, JIRA, MySQL, PostgreSQL, Jenkins, MongoDB, Hazelcast, Amazon Web Services, Unix, Splunk, MongoDB, Redis, JSON, XML, Tomcat, Struts, JavaScript, TypeScript, CSS</p>
-            <p>Big Data: Apache Kafka, Apache Hadoop, Apache HBase, Apache Spark, Apache Hive, Python, Pyspark, MapReduce, Apache Sqoop, Hadoop Distributed File System, Data Mining, Cassandra</p>
-            <p>Cloud: AWS S3, EC2, ECS, Lambda, DynamoDB, Cognito, Aurora, Azure Storage</p>
-            <!-- Add more skills here -->
-        </section>
 
-       <section class="section education">
-            <h2>EDUCATION</h2>
-            <h3>Ms in Computer Science City University Of Seattle • Seattle, Washington, USA • GPA: 4 • 09/2022 - 03/2024</h3>
-            <h3>Diploma In Advance Computing in Computer Science CDAC • Pune, Maharashtra, India • 02/2010</h3>
-            <h3>B.E in Computer Science & Engineering Amravati University • Amravati, Maharashtra, India • 05/2009</h3>
-        </section>
-
-        <section class="section certifications">
-            <h2>CERTIFICATIONS</h2>
-            <ul>
-                <li>AWS Certified Solutions Architect – Associate</li>
-                <li>Cloudera CCA Spark and Hadoop Developer</li>
-                <li>Confluent Certified Developer for Apache Spark</li>
-                <li>Databricks Certified Associate Developer for Apache Spark 2.4 with Scala 2.11</li>
-                <li>Oracle Java EE 5 Web Component Developer</li>
-                <li>Oracle Certified Professional Java SE 6 Programmer</li>
-                <!-- Add more certifications here -->
+        <div class="section">
+            <div class="section-title">
+                <h2>Experience</h2>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-content">
+                        <h3>Teaching Assistant | City University of Seattle, Seattle, WA</h3>
+                        <p>Jan 2023 – Dec 2023</p>
+                        <p>Created Java-based test automation framework for student reports, enhancing grading efficiency and frontend development with JavaScript, including comprehensive logging.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h3>Senior Software Development Engineer | Visma Consulting, Helsinki, Finland</h3>
+                        <p>Aug 2021 – Sep 2022</p><br>
+                        <p>Modernized legacy application by transitioning from a monolithic to a microservices architecture using Docker and Kubernetes, resulting in a 20% reduction in development, maintenance, and server costs.</p><br>
+                        <p>Developed a new module from scratch using Ruby on Rails for digital signature customers, meeting requirements and significantly increasing development speed, enabling new APIs to be created.</p><br>
+                        <p>Automated build and deployment processes with a Jenkins pipeline, reducing lead time from 8 hours to 1 hour and enhancing development velocity. Implemented GitOps principles for continuous integration and deployment.</p><br>
+                        <p>Enhanced data security by implementing a GDPR-compliant design to address plaintext storage of user-sensitive data.</p><br>
+                        <p>Improved API accessibility by implementing version-agnostic backward and forward compatibility for REST services, eliminating client-side version adaptation issues.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h3>Lead Software Engineer | Clairvoyant, Pune, India</h3>
+                        <p>Apr 2020 – Apr 2021</p><br>
+                        <p>Implemented GDPR compliance for PayPal's large Hive data warehouse by developing a Pyspark job to mask specific primary keys. This job efficiently processes 2 million records in 30 minutes, despite Hive 1.1's limitations.</p><br>
+                        <p>Streamlined data ingestion by building a robust data pipeline using Spark for processing, Hive for storage, and Kafka for real-time intake, meeting client requirements.</p><br>
+                        <p>Enhanced data processing by creating a Java application that listens to Kafka topics, parses XML files, extracts data, and stores it in Hive tables, efficiently handling batches of 50,000 records.</p><br>
+                        <p>Developed a RESTful API for PayPal Honey Entity using Spring and Java, facilitating efficient data access and management.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h3>Senior Module Lead | SABA, Pune, India</h3>
+                        <p>Dec 2017 – Apr 2020</p><br>
+                        <p>Transformed the learning module processing with a high-performance Kafka pipeline, converting a serial job system into a parallel Kafka-powered pipeline. This boosted throughput by 10x, processing 1 million records in 1 hour instead of 1 hour per job.</p><br>
+                        <p>Architected a data pipeline that integrates archived and current data into a cost-effective Big Data cluster, enabling efficient reporting. Reduced report generation time for 5 million records from 24 hours to 30 minutes.</p><br>
+                        <p>Developed new features and REST services for the Certification and Curriculum modules based on product requirements.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h3>Associate (Software Developer) | Deutsche Bank Group (Market Risk IT), Pune, India</h3>
+                        <p>May 2016 – Dec 2017</p><br>
+                        <p>Collaborated closely with the business and built a robust framework within Matrix that efficiently calculates valuations for a massive portfolio.</p><br>
+                        <p>Revamped Deutsche Bank's exposure assessment for 90,000+ listed trades: Implemented advanced back-testing methods resulting in 30% more accurate risk analysis. Utilized agile methodology to optimize back-testing runs, resulting in faster and more accurate results.</p><br>
+                        <p>Streamlined trade valuation process by 50%: Designed and implemented high-performance Matrix system for 90,000+ trades.</p><br>
+                        <p>Implemented optimizations using Java, Hazelcast, and multi-threading within a distributed system, resulting in a remarkable increase in trade data processing speed by 48x. This reduction in processing time from 48 hours to 4 not only saved time but also significantly reduced costs, highlighting the effectiveness of advanced data structures and algorithms.</p><br>
+                        <p>Wrote a Hadoop MapReduce tool to process 1 million trades in the HBase table in 10 minutes (67%-time reduction).</p><br>
+                        <p>Increased team productivity by 25% and received Recognition and Spot Excellence awards for efficient coding.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h3>Senior Software Engineer | Zensar, Pune, India</h3>
+                        <p>Feb 2015 – May 2016</p><br>
+                        <p>Implemented microservices to streamline core functions: Developed REST APIs for Breeds, Judges, and Events, cutting data access time by 50%.</p><br>
+                        <p>Developed secure login services using Spring Security for LDAP, GIGYA, and database systems, ensuring user confidentiality and data integrity.</p><br>
+                        <p>Automated data synchronization, slashing manual effort by 80% and enhancing data consistency across Oracle and MySQL databases.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h3>Senior Software Engineer | HSBC, Pune, India</h3>
+                        <p>May 2011 – Feb 2015</p><br>
+                        <p>Enhanced Messaging campaign delivery streamlined: Created automated data upload for daily updates of us.hsbc.com customer data, improved customer engagement by 30%.</p><br>
+                        <p>Streamlined campaign data retrieval, saving Content Management team 1 hour per day.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <h3>Software Engineer | CDAC R&D, Pune, India</h3>
+                        <p>Mar 2010 – Apr 2011</p><br>
+                        <p>Implemented and customized an Account, Budget, Works, and Billing Monitoring System. Achieved 20% increase in client satisfaction. Custom Billing Module reduced errors by 30% and received commendation for exceeding client expectations.</p>
+                    </div>
+                </li>
             </ul>
-        </section>
+        </div>
+
+        <div class="section">
+            <div class="section-title">
+                <h2>Education</h2>
+            </div>
+            <div class="education-list">
+                <p>
+                    M.S. Computer Science | City University of Seattle, Seattle, WA<br>
+                    Course Outline: Algorithms, Advanced Parallel Processing, Advanced Operating Systems, Distributed Systems<br>
+                    Sep 2022 – Mar 2024<br>
+                    GPA: 4<br><br>
+                    PG Diploma Computer Science | Centre for Development of Advanced Computing, India<br>
+                    Course Outline: Data Structures, Databases, Object-Oriented Programming<br>
+                    Jul 2009 – Mar 2010<br>
+                    GPA: 3.2<br><br>
+                    B.Tech. Computer Science | Ram Meghe Institute of Technology & Research, India<br>
+                    Course Outline: Computer Network, Operating Systems<br>
+                    Jul 2005 – Jan 2009<br>
+                    GPA: 3.5
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">
+                <h2>Certifications</h2>
+            </div>
+            <div class="certifications-list">
+                <p>
+                    AWS Certified Solutions Architect – Associate<br>
+                    Cloudera CCA Spark and Hadoop Developer | CCA175 (Apr 2023)<br>
+                    Confluent Certified Developer for Apache Spark | CCDAK (Mar 2020)<br>
+                    Databricks Certified Associate Developer for Apache Spark 2.4 with Scala 2.11 | CRT020 (Dec 2019)<br>
+                    Oracle Java EE 5 Web Component Developer | OCWCD (Oct 2011)<br>
+                    Oracle Certified Professional Java SE 6 Programmer | OCJP (Jun 2011)
+                </p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
